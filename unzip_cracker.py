@@ -6,7 +6,7 @@ from threading import Thread
 def cracker(zip_file,password):
 	try:
 		print "[*] Trying password: ",password
-		zip_file.extractall(pwd = password)
+		zip_file.extractall(pwd = password)  # will try to extract the file with the password given
 		print "[+] Success in cracking, the password seems to be: ",password
 		sys.exit()
 	except:
@@ -14,7 +14,7 @@ def cracker(zip_file,password):
 
 
 def main():
-	parser = optparse.OptionParser("USAGE: "+"-f <zipfile-name> -d <dictionary-file-name>")
+	parser = optparse.OptionParser("USAGE: "+"-f <zipfile-name> -d <dictionary-file-name>")  # creating a OptionParser object
 	parser.add_option('-f', dest = "zname",type = 'string',help = 'specify zipfile name')
 	parser.add_option('-d', dest = 'dname', type= 'string', help = 'specify dictionary file name')
 
