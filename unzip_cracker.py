@@ -14,7 +14,7 @@ def cracker(zip_file,password):
 
 
 def main():
-	parser = optparse.OptionParser("usage%prog"+"-f <zipfile-name> -d <dictionary-file-name>")
+	parser = optparse.OptionParser("USAGE: "+"-f <zipfile-name> -d <dictionary-file-name>")
 	parser.add_option('-f', dest = "zname",type = 'string',help = 'specify zipfile name')
 	parser.add_option('-d', dest = 'dname', type= 'string', help = 'specify dictionary file name')
 
