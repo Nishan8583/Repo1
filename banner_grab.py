@@ -1,4 +1,5 @@
-'''The code is imilar to tcp_full_scan.py, except for we send and recieve some info'''
+'''The code is imilar to tcp_full_scan.py, except for we send and recieve some info
+ALso there my be some inentation error in this file, so you might want to insert this code in a IDE first'''
 #!/usr/bin/python
 import socket,optparse
 from sys import exit
@@ -28,8 +29,8 @@ def specific_scan(ip,port):
 	try:
 		s.connect((ip,port))
 		print "Target {} has port {} open\n trying to get some info".format(ip,port)
-    s.send("GIve Me SoMe")
-    print "The host replied: "s.recv(100)
+    		s.send("GIve Me SoMe")
+    		print "The host replied: "s.recv(100)
 	except:
 		print "target {} does not have port {} open".format(ip,port)
 
@@ -40,10 +41,10 @@ def range_scan(ip):
 		try:
 			s.connect((ip,port))
 			print "Target {} has port {} open".format(ip,port)
-      print "Target {} has port {} open\n trying to get some info".format(ip,port)
-      s.send("GIve Me SoMe")
-      print "The host replied: "s.recv(100)
-    except:
-      print "target {} does not have port {} open".format(ip,port)
+      			print "Target {} has port {} open\n trying to get some info".format(ip,port)
+      			s.send("GIve Me SoMe")
+      			print "The host replied: "s.recv(100)
+    		except:
+      			print "target {} does not have port {} open".format(ip,port)
 if __name__ == '__main__':
 	main()
