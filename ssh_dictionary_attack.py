@@ -18,7 +18,7 @@ def main():
         file = open(options.file,'r')
         for word in file.readlines():
                 password = word.strip('\n')
-                t = Thread(target=connect,args = ('localhost','nishan',password))
+                t = Thread(target=connect,args = ('localhost','nishan',password))  # first two arguments are hostname and username, change according to need
                 t.start()
 
 if __name__ == '__main__':
