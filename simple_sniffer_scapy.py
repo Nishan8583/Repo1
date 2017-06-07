@@ -7,3 +7,5 @@ def display(pkt):
 
 sniff(prn = display)
 
+# In prn different type of function can be passed, that acts accordingly
+
