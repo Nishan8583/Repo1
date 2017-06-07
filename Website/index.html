@@ -1,0 +1,278 @@
+<!doctype html><!--Declaring html5 type of code-->
+<html><!--starting html tag-->
+
+	<head><!--starting head tag-->
+		<title> Home, New Tech News </title><!--stating a title for the page-->
+		<!--starting, adding content inside the title tag, closing the title tag-->
+		<!--startimng style tag to use css tag,,, inside different properties are used with specific values-->
+		<meta type = 'author' content = 'Nishan Maharjan'
+				charset = 'UTF-8'><!--specifying that the character encoding of my content is UTF-8--><!--specing the author of the page-->
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/style.css'><!--linking the external css codes in this HTML file-->
+		<link rel = 'icon' href = 'images/logo.png'><!--adding a con in the taskbar-->
+		
+		<style><!--starting internal css codes-->
+			.jello{
+				text-decoration:underline;
+				color:#999999;
+			}
+			
+			.sub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				transition:height 2s;
+				height:400px;
+				overflow:hidden;
+			}
+			.sub:hover{
+				height:550px;
+				box-shadow:0 0 5px #000000;
+			}
+			.cub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				transition:height 2s;
+				height:400px;
+				overflow:hidden;
+			}
+			
+			.pub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;	
+			}
+			
+			.pub:hover{
+				box-shadow:0 0 5px #000000;
+			}
+			
+			.link{
+				text-decoration:none;
+				color:black;
+				margin-left:120px;
+				background-color:#BBBBBB;
+				padding:5px;
+				border-radius:3px;
+			}
+			
+			.link:hover{
+				box-shadow:0 0 12px #666666;
+			}
+			
+			.drop:hover .anot{
+					display:block;
+			}
+			
+			.map{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				transition:height 2s;
+				height:400px;
+			}
+			
+			.map:hover{
+				box-shadow:0 0 5px #000000;
+			}
+			input[type=text] {
+					
+				}
+			
+			
+			@font-face{
+				font-family:tech;
+				src: url('font/Gtek Technology free promo.ttf');
+				
+			}
+			
+			p:first-letter{
+					font-size:30px;
+					
+			}
+			p{
+				font-size:17px;
+			}
+			#container{
+				height:600px;
+				width:850px;
+				margin:20px auto;
+				position:relative;
+				box-shadow:8px 8px 5px #666666;
+				background-color:#DDDDDD;
+			}
+			#img{
+				height:450px;
+				width:650px;
+				position:absolute;
+				border-radius:4px;
+				left:100px;
+			}
+			#leftholder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				left:0px;
+				top:0px;
+				
+			
+			}
+			#rightholder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				right:0px;
+				top:0px;
+			
+			}
+			#left{
+				height:50px;
+				width:50px;
+				position:absolute;
+				top:60%;
+				left:20px;
+				border-radius:12px;
+			}
+			#right{
+				height:50px;
+				width:50px;
+				position:absolute;
+				top:60%;
+				right:20px;
+				border-radius:12px;
+			}
+			#right:hover,#left:hover
+			{
+				box-shadow:0 0 20px #000000;
+			}
+			#greeting:hover,#date:hover{
+				text-shadow:0 0 10px #000000;
+			}
+			
+	
+		</style><!--closing the internal CSS codes-->
+		<script src = 'javascript/script.js'></script><!--using external JavaScript-->
+	</head>
+	<!--closing head tag-->
+	
+	<!--starting body tag-->
+	<body>
+		<!--linking for going to top -->
+		<a class = 'topper' href = '#top'>TOP</a>
+		<div style = 'width:1100px;margin:auto;background-color:transparent;z-index:6;'><!--starting a continer, <div> tag and setting specific properties with specific values, here the div tag will be the wrapper-->
+			<!--starting header, a container for header section-->
+			<div style = 'width:1100px;margin:0px auto;height:200px;'><!--using css properties and valiues to style the header-->
+				<a href = 'index.html'><img id = 'logo' src = 'images/logo.png'></a>
+				<img src = 'images/logo3.png' id = 'ft' usemap = '#social'>
+				<map name = 'social'>
+				<area shape = 'rect' coords ='3,16,61,76' href = 'https://twitter.com/?lang=en' target = '_blank'>
+				<area shape = 'rect' coords = '71,0,122,90' href = 'https://www.facebook.com/' target = '_blank' >
+				</map><!--mapping the images-->
+				<input type = 'text' placeholder = 'Research' id = 'search'/>
+				<input type = 'submit' onclick = 'search()'value = 'search' /><!--creating a submit button whihc calls search() function when onclock event is triggered-->		
+			</div><!--closing header-->
+			
+			<p style = 'visibility:hidden;' id = 'top'></p><!---contains CSS animation and links to top->
+			
+			<!--starting a container, <nav> tag for seperating navigation bar section-->
+			<nav>	
+			<!--starting <ul> tag for kepping links in lists and styling <ul> using css-->
+				<ul>
+				</br><!--breaking a line for decoration-->
+				
+					<li><a href='index.html' style = 'background-color:#111;'>Home</a></li>
+					<li><a href='pages/General.html'>General</a></li>
+					<li><a href='pages/internet.html'>internet</a></li>
+					<li><a href='pages/Top10.html'> Top 10</a></li>
+					<li><a href='pages/Aboutus.html'>AboutUs</a></li>
+				</ul><!--closing list-->
+			</nav>
+			<!--closing <nav> container-->
+				<!--starting a container for main part, <main> tag-->	
+				<main style = ' margin-top:5px; background-color:#ffffff;height:1800px;padding:20px;'>	
+				
+					<section style = 'background-color:color;padding:12px;'>
+					
+					<div id = 'date' style = 'padding-left:50px;font-family:time;font-size:50px;'></div>
+					<div id = 'greeting' style = 'padding-left:550px;font-family:time;font-size:30px;'></div>
+
+						<div id ='container'>
+						<h3 class = 'head' align = 'center'style = 'font-family:game;padding-top:20px;font-size:20px;'>TOP GAMES THIS SEASON</h3>
+						<img src = 'images/img.png' id = 'img'/>
+						<div id = 'leftholder'><img onclick = 'slide(-1)' src= 'images/left.png' id = 'left'></div>
+						<div id = 'rightholder'><img onclick = 'slide(1)' src = 'images/right.png' id = 'right'></div>
+						<a class = 'link' style = 'position:absolute;top:510px;right:380px'href = 'pages/Top10.html#Last'>Take Me there</a>	
+						</div>	
+
+					<div class = 'cub'  style = 'width:920px;margin:10px auto;'>
+					<h3 class = 'head' align = 'center'style = 'color:#0000AA;'>The US Pushes For Access</h3>
+					<img src = 'images/i.png' style = 'width:400px;margin:12px;float:left;'></br>
+					
+					<p class = 'content'style = 'margin:30px;'>The Recent Terrorist attacks in the us has led the FBI
+					to tackle with the APPLE and many other tech giants in order to 
+					get pass their encrypted phones and gain acces to the suspects 
+					smartphone. This not only violates the suspects personeel records but
+					APPLE believes it could be used to gain access to all other APPLE smartphon..</br></br>
+					<a class = 'link'  href = 'pages/General.html#apple' > READ MORE</a></p>
+					<p class = 'l'></p>
+					
+					</div>
+					
+					
+					
+					<div class = 'sub'  style = 'width:500px;margin-top:20px;float:left;' name = 'unc'>
+					<h3 class = 'head' align = 'center'style = 'color:#0000AA;'>Uncharted4:A thiefs End To Release Soon</h3>
+					<img src = 'images/3.png' style = 'width:400px;margin:12px;'></br>
+					
+					<p  class = 'content'style = 'margin:30px;'>Uncharted 4: A Thief’s End was revealed at the tail end of 2013 and since then developer Naughty Dog and publisher Sony 
+					have been drip-feeding us with tiny tidbits of information.
+				
+					The Uncharted 4 release date has now been confirmed for May 10, 2016 exclusively for the PS4.Uncharted: The Nathan Drake Collection 
+					launched in October 2015 for PS4. The package features remas..</br>
+					<a class = 'link' href = 'pages/General.html#uncharted'> READ MORE</a>
+					</div>
+					</br>
+					
+					<div class = 'sub'  style = 'width:500px;float:left;margin-left:10px;'>
+					<h3 class = 'head' align = 'center'style = 'color:#0000AA;'>CAN INFO TECH 2072</h3>
+					<img src = 'images/can.png' style = 'width:360px;margin:12px;height:230px;'></br>
+					
+					<p class = 'content'style = 'margin:30px;'>Computer Association of Nepal (CAN) was formed in May 1992 but was formally registered in December 1992 and later registered as 
+					Federation of Computer Association Nepal (CAN Federation) in January 2015 with the involvement of professionals, specialists, 
+					institutions and related organizations from the Information Communication  ...</br>
+					<a class = 'link'  href = 'pages/General.html#can' > READ MORE</a></p>
+					</div>
+					</br>
+				
+					</section>
+				
+				</main><!--closing main container-->
+				<!--openiing a container tag ,<footer> tag, for footer section-->
+				<!--closin footer tag-->
+			<!--closing div tag-->
+		<div id = 'footer' style = 'font-face:monospace;'> &copy Copyright Nishan Corps 2016. Kathmandu, Nepal </div>
+		</div>
+	
+			<script><!--using internal JavaScript for cheking date and greeting-->
+				var date = new Date();
+				var hour,min,month,day,hour1,year;
+				hour1 = date.getHours()
+	
+				hour = String(date.getHours());
+	
+				day = String(date.getDay());
+	
+				month = String(date.getMonth());
+	
+				min = String(date.getMinutes());
+	
+				year = String(date.getFullYear());
+	
+				var n = 'Date: '+year+'/'+month+'/'+day+'         Time '+hour+':'+min;
+				document.getElementById('date').innerHTML =n;
+				
+				if(hour1>12){document.getElementById('greeting').innerHTML = 'good Afternoon';}
+				else if(hour1>17&& hour1<19){document.getElementById('greeting').innerHTML = 'good Evening';}
+				else if(hour1>19&& hour1<0){document.getElementById('greeting').innerHTML = 'good Night';}
+				else if(hour1>0&&hour1<12){document.getElementById('greeting').innerHTML = 'good morning';}	
+			</script>
+	
+	</body>
+	<!--closing body tag-->
+</html><!--closing html tag-->

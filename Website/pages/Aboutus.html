@@ -1,0 +1,231 @@
+<!doctype html><!--Declaring html5 type of code-->
+<html><!--starting html tag-->
+	<head><!--starting head tag-->
+		<title> Aboutus NewTechNews</title><!--starting, adding content inside the title tag, closing the title tag-->
+		<meta type = 'author' content = 'Nishan Maharjan'
+				charset = 'UTF-8'><!--specifying that the character encoding of my content is UTF-8--><!--specing the author of the page-->
+		<!--startimng style tag to use css tag,,, inside different properties are used with specific values-->
+		<link rel = 'stylesheet' type = 'text/css' href = '../css/style.css'>
+		<link rel = 'icon' href = '../images/logo.png'><!--the icon will appear in the tab-->
+		<style>
+		.jello{
+				text-decoration:underline;
+				color:white;
+			}
+			
+			.sub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				
+			}
+			
+			.sub:hover{
+					box-shadow:0 0 5px #000000;
+			}
+			
+			.link{
+				text-decoration:none;
+				color:black;
+				margin-left:120px;
+				background-color:#BBBBBB;
+				padding:5px;
+				border-radius:3px;
+			}
+			
+			.link:hover{
+				box-shadow:0 0 12px #666666;
+			
+			}
+			td,th{
+				padding:12px 18px;
+			
+			}
+			th{
+				background-color:#333;
+				color:white;
+			}
+			td{
+				background-color:white;
+			}
+			table{
+				margin-left:150px;
+				
+			}
+			  #map {
+				height: 300px;
+				width:300px;
+				left:100px;
+				}
+			
+		</style>
+		
+		<!--closing style tag-->
+	</head>
+	<!--closing head tag-->
+	<!--starting body tag-->
+	<body>
+		<!--starting a continer, <div> tag and setting specific properties with specific values, here the div tag will be the wrapper-->
+		<a class = 'topper' href = '#top'>TOP</a>
+		
+		<div style = 'width:1100px;
+					margin:auto;
+					background-color:transparent;
+					'>
+			<!--starting header , a container for header section-->
+		<div style = 'width:1100px;margin:0px auto;height:200px;'>
+				<img id = 'logo' src = '../images/logo.png'>
+				<img src = '../images/logo3.png' id = 'ft' usemap = '#social'>
+				<map name = 'social'>
+				<area shape = 'rect' coords ='3,16,61,76' href = 'https://twitter.com/?lang=en' target = '_blank'>
+				<area shape = 'rect' coords = '71,0,122,90' href = 'https://www.facebook.com/' target = '_blank' >
+				</map>
+				<input type = 'text' placeholder = 'Research' id = 'search'/>
+				<input type = 'submit' onclick = 'search()'value = 'search' /><!--creating a submit button whihc calls search() function when onclock event is triggered-->
+				
+				<!--using css properties and valiues to style the header-->
+			<!--closing header-->
+			</div>
+			
+			<p style = 'visibility:hidden;' id = 'top'></p>
+			<!--starting a container, <nav> tag for seperating navigation bar section-->
+			<nav>	
+			<!--starting <ul> tag for kepping links in lists and styling <ul> using css-->
+				<ul>
+				</br><!--breaking a line for decoration-->
+					<li><a href = '../index.html'>Home</a></li>
+					<li><a href='General.html'>General</a></li>
+					<li><a href = 'internet.html'>internet</a></li>
+					<li><a href = 'Top10.html'> Top 10</a></li>
+					<li><a href = 'Aboutus.html' style = 'background-color:#111;'>AboutUs</a></li>
+					
+				</ul><!--closing list-->
+			</nav><!--closing <nav> container-->
+				<!--starting a container for main part, <main> tag-->	
+				<main style = ' margin-top:5px; background-color:#ffffff;height:1500px;'>
+				
+					<section style = 'background-color:color;padding:12px;'>
+					
+					
+					<div class = 'sub'  style = 'width:980px;margin:10px;height:600px;'>
+					<h3  class = 'head'align = 'center'style = 'color:#0000AA;'>Contact Us</h3>
+					<p  class = 'content'style = 'font-size:20px;padding:30px;'>The New Tech News was establihed in 2012. It was first envisioned by Nishan Maharajan and was 
+						made possible by collaboration with James Franco and Yeliska Birkkinisk. It was made with the aim of providing it's viewers 
+						with the latest ongoing and changing information about the tech world, and so far it has been able to do so. It's main headquaters and 
+						servers are located in Jadibuti, Koteshwor.YOu can get the locatio in <b><u>GOOGLE MAP</u> </b> in left side. Some basic information of the people behind the website are given below. Thier personel details 
+						will not be revieled for obvious reasons.
+					
+						</p>
+						
+						<table  class = 'content' style = 'float:left;'>
+							
+								<th>Name</th>
+								<th>Company Position Position</th>
+							<tr>
+							
+							<td>	Nishan Maharjan</td>
+							<td>	CEO</td>
+							</tr>
+							<td>	james franco</td>
+							<td>	lead web designer</td>
+							</tr>	
+							<td>	Yeliska Brikkinesk</td>
+							<td>	Lead Back end Programmer</td>
+							
+							</tr>
+							</table>
+						
+						<div id="map"></div><!--creatin a container which will be used by JavaScript to add google map-->
+							<script>
+								var map;//creating a variable
+								function initMap() {
+								map = new google.maps.Map(document.getElementById('map'), {
+								center: {lat: 27.675096, lng: 85.353271},
+								zoom: 15
+								});
+							}//the function initMap() creates a googlemap object 
+							</script>
+							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK1Pp5eqFbiQiBSCUJFAHUlfmNRxDfPI0&callback=initMap"async defer></script><!--linking google map with API key and then calling initMap()function-->
+							<a style = 'background-color:#BBBBB;text-decoration:none;color:black;background-color:#333;border-radius:8px;padding:12px 18px;color:white;margin-top:60px;' href = '../download/New Tech News1.pdf' download>click to download pdf </a>
+						</div>	
+						
+						<p style = 'padding:30px;' class = 'content'>
+							If you have any compains about any of the informatons we provide You are encoiuraged to fill
+							up the form below and please inform us with the problem. You could also use the form to provide
+							suggestions for the website.</p>
+							
+			
+						<form name = 'Complain/Suggestion' action = 'NishanMaharjan17@gmail.com' method = 'POST' class = 'content' >
+							Complains:</br>
+							<textarea rows = '12' cols = '60'>
+							
+							</textarea></br>
+							
+							<input type = 'submit' style = 'background-color:#333; padding:16px 20px;border-radius:6px;color:white;'>
+							</br>If you want recieve our weekly news letter, Please fill up the following form</br>
+						</form>
+						</p>
+						
+						
+						<fieldset>
+							<legend>Submit Us</legend>
+						</br>
+						<form name = 'form' action = 'mailto:NishanMaharjan17@gmail.com' class = 'content' onsubmit = 'return check()'>
+						
+						
+						Name:</br><input type = 'text' name = 'Name' placeholder = 'Enter Your name Here' id = 'name' style = 'height:30px,;width:300px;padding:10px 12px;' ></br>
+						<p id = "inf1" style = 'color:red;'></p>
+						
+						
+						Contact No:</br><input id = 'contact' type = 'text' name = 'PhoneNo' placeholder = 'Enter Your Phone Number Here' style = 'height:30px,;width:300px;padding:10px 12px;'></br>
+						
+						<p id = "inf2" style = 'color:red;'></p>
+						
+						
+						Email:</br> <input type = 'Email' name = 'Emai' placeholder = 'Enter your email here(Cumpolsary)'style = 'height:30px,;width:300px;padding:10px 12px;'  required ></br>
+						<p id = "inf3" style = 'background-color:#3333;color:white;'></p>
+						
+						Gender:</br> <input type ='radio' name = 'xender' value = 'Male'>Male</input>
+								<input type = 'radio' name = 'xender' value = 'Female'>Female</input></br>
+						<p id = "inf" style = 'background-color:#3333;color:white;'></p>		
+						
+						
+						<input type = 'submit' style = 'background-color:#333; padding:16px 20px;border-radius:6px;color:white;'>
+					
+						
+						</fieldset>
+						</form>
+						<p id = "inf" style = 'background-color:#3333;color:white;'></p>
+					
+					</section>
+					
+				</main>
+				<!--closing main container-->
+				<!--openiing a container tag ,<footer> tag, for footer section-->
+				<!--closin footer tag-->
+			<!--closing div tag-->
+			<div id = 'footer' style = 'font-face:monospace;'> &copy Copyright Nishan Corps 2016. Kathmandu, Nepal </div>
+		</div>
+		<script>
+		function check(){
+			var cond = true;
+			var name1,contact1;
+			name1 = document.getElementById('name').value;
+			contact1 = document.getElementById('contact').value;
+			if(isNaN(name1) !== cond){
+			document.getElementById('inf1').innerHTML = 'please enter name';
+			return false;
+			}
+			else if(isNaN(contact1) == cond){
+			document.getElementById('inf2').innerHTML = 'please enter number';
+			return false;
+			}
+			else{
+			return true;
+			}
+		
+		
+		}
+		</script>
+	</body>
+	<!--closing body tag-->
+</html><!--closing html tag-->

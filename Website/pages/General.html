@@ -1,0 +1,206 @@
+<!doctype html><!--Declaring html5 type of code-->
+<html><!--starting html tag-->
+	<head><!--starting head tag-->
+		<title>General, NewTechNews</title><!--starting, adding content inside the title tag, closing the title tag-->
+		<meta type = 'author' content = 'Nishan Maharjan'
+				charset = 'UTF-8'><!--specifying that the character encoding of my content is UTF-8--><!--specing the author of the page-->
+		<!--startimng style tag to use css tag,,, inside different properties are used with specific values-->
+		<link rel='stylesheet' type='text/css' href='../css/style.css'>
+		<link rel = 'icon' href = '../images/logo.png'><!--the icon will appear in the tab-->
+		<style>
+		.jello{
+				text-decoration:underline;
+				color:white;
+			}
+			.sub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				
+			}
+			.sub:hover{
+					box-shadow:0 0 5px #000000;
+					
+			}
+			.link{
+				text-decoration:none;
+				color:black;
+				margin-left:120px;
+				background-color:#BBBBBB;
+				padding:5px;
+				border-radius:3px;
+			}
+			.link:hover{
+				box-shadow:0 0 12px #666666;
+			
+			}
+			
+		</style>
+		<script src = '../javascript/script.js'>
+				
+		</script>
+		<!--closing style tag-->
+	</head>
+	<!--closing head tag-->
+	<!--starting body tag-->
+	<body>
+		<!--starting a continer, <div> tag and setting specific properties with specific values, here the div tag will be the wrapper-->
+		<a class = 'topper' href = '#top'>TOP</a>
+		<div style='width:1100px;
+					margin:auto;
+					background-color:transparent;
+					'>
+			<!--starting header tag, a container for header section-->
+		<div style = 'width:1100px;margin:0px auto;height:200px;'>
+				<img id = 'logo' src = '../images/logo.png'>
+				<img src = '../images/logo3.png' id = 'ft' usemap = '#social'>
+				<map name = 'social'>
+				<area shape = 'rect' coords ='3,16,61,76' href = 'https://twitter.com/?lang=en' target = '_blank'>
+				<area shape = 'rect' coords = '71,0,122,90' href = 'https://www.facebook.com/' target = '_blank' >
+				</map>
+				<input type = 'text' placeholder = 'Research' id = 'search'/>
+				<input type = 'submit' onclick = 'search()'value = 'search' /><!--creating a submit button whihc calls search() function when onclock event is triggered-->
+				
+				<!--using css properties and valiues to style the header-->
+			<!--closing header tag-->
+				
+			</div><p style = 'visibility:hidden;' id = 'top'></p>
+			<!--starting a container, <nav> tag for seperating navigation bar section-->
+			<nav>	
+			<!--starting <ul> tag for kepping links in lists and styling <ul> using css-->
+				<ul>
+				</br><!--breaking a line for decoration-->
+				
+					<li><a href='../index.html'>Home</a></li>
+					<li><a href='events.html'  style = 'background-color:#111;'>General</a></li>
+					<li><a href='internet.html'>internet</a></li>
+					<li><a href='Top10.html'> Top 10</a></li>
+					<li><a href='Aboutus.html'>AboutUs</a></li>
+					
+					
+				</ul><!--closing list-->
+			</nav><!--closing <nav> container-->
+				<!--starting a container for main part, <main> tag-->	
+				<main style = ' margin-top:5px; background-color:#ffffff;'>
+				
+					<section style = 'background-color:color;padding:12px;'>
+					
+					
+					<div class = 'sub'  style = 'width:1000px;margin:10px auto;height:300px;overflow:scroll;' id = 'can'>
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>CAN INFO TECH 2072</h3>
+					<img src = '../images/can.png' style = 'width:400px;margin:12px;float:left;'></br>
+					
+					<p class = 'content'>Computer Association of Nepal (CAN) was formed in May 1992 but was formally registered in December 1992 and later registered as 
+					Federation of Computer Association Nepal (CAN Federation) in January 2015 with the involvement of professionals, specialists, 
+					institutions and related organizations from the Information Communication Technology sector in Nepal. It is an umbrella organization 
+					with membership base ranging from ICT Institutions, Associations to Individuals working in this sector. CAN Federation works along with
+					thelines of an autonomous, non-political, nonpartisan,nonprofitable and service oriented sector of ICT..
+					The CAN Infotech 2016 officially kicks off on January 29, 2016 and the tech companies is gearing upto 
+					start 2016 with their latest product launch, discounts, and offers. This grand-scale exhibition attracts thousands of 
+					companies and hundreds of thousands of attendees every January. Last’s years CAN was a big disappointment and we hope to see a
+					bigger improvement, this time, around.(gadgetbytenepal,2015) 
+					Inaugurating the event, Prime Minister KP Sharma Oli highlighted the importance of information and technology for the development of the 
+					country. He said that the government welcomes ICT related programmes like this. “We need to slowly head towards e-governance and digital 
+					friendly governance which will help the country keep up with the modern world and expand in terms of science and technology, trade and
+					commerce, tourism, hydro power, agriculture and other sectors of development,” he stated.
+					“CAN aims to reach every part of the country to make it fully digital and seeks help and support from the government which
+					can be done by prioritising the sector,” said Binod Dhakal, President of CAN Federation. According to him, the event is not only 
+					meant to showcase the latest innovations, but also to gather ICT enthusiasts under a single roof for its promotion(The HImalayan TImes,2016).</br></br>
+					</p>
+					</div>
+					
+					<div class = 'sub'  style = 'width:1000px;margin:10px auto;height:300px;overflow:scroll;'>
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>Sql Saturday</h3>
+					<img src = '../images/sql.png' style = 'width:400px;margin:12px;'></br>
+					<p class = 'content'>
+					PASS SQL Saturday is a day-long free training event for professional SQL Server DBAs and Developers,
+					as well as those wanting to learn about SQL Server. It focuses on local speakers, providing a variety of high-quality
+					technical sessions, and making it all happen through the efforts of volunteers. -
+					Have SQLSaturday questions or suggestions? Feel free to contact the PASS SQLSaturday HQ Team at any time! using our website
+					<a href = 'http://www.sqlsaturday.com/'>http://www.sqlsaturday.com/</a></p>
+					
+					</br>
+					Here are the list of events and their venues</br>
+					<table border = '1px' class = 'content'>
+							<tr>
+								<th>Upcoming events dates</th>
+								<th>Places</th>
+							</tr>
+							<tr>
+								<td>April 16, 2016 </td>
+								<td>Canada/Us</td>
+							</tr>
+							<tr>
+								<td>April 16, 2016</td>
+								<td>Canada/US</td>
+							</tr>
+							<tr>
+								<td>April 16, 2016</td>
+								<td>Asia Pacific</td>
+							</tr>
+							<tr>
+								<td>April 23, 2016</td>
+								<td>Latin America</td>
+							</tr>
+							<tr>
+								<td>May07, 2016</td>
+								<td>Canada/Us</td>
+							</tr>
+							
+							
+						</table>
+						(sqlsaturday, 2016)
+					
+					</div>
+					</br>
+					
+					<div class = 'sub'  style = 'width:1000px;margin:10px auto;height:300px;overflow:scroll;' id = 'uncharted'>
+					
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>Uncharted 4 comming soon</h3>
+					<img src = '../images/3.png' style = 'width:400px;margin:12px;float:left;'></br>
+					
+					<p class = 'content'>15 for PS4. The package features remastered versions of all three PS3 titles running at a silky smooth 1080p/60fps.
+					The last game in the series, Uncharted 3: Drake’s Deception was released back in 2011, so we’ve been waiting over four years f
+					or the continuation of Drake’s story.Hopefully we won’t have much longer to wait
+					We have great news for all our Uncharted fans – Amy, Justin and the team are hard at work on an amazing new instalment of the Uncharted series to be released exclusively on the PlayStation 4 system,” said Naughty Dog Community Strategist, Arne Meyer at the original trailer launch back in November 2013.
+					“Our goal is to continue what we’ve done in previous console generations and once again deliver the best in storytelling, performance capture, technical innovation and graphics on the PS4. We can confirm that the voiceover is performed by Todd Stashwick and he will play a character in the game.”
+					Since the game was announced, Uncharted 4 writer Amy Hennig has left Naughty Dog after working on the Uncharted series for over a decade. The Last of Us developer has since confirmed that her departure will not affect work on Uncharted 4.
+					</br></br></p>
+					
+					</div>
+					<div class = 'sub'  style = 'width:1000px;margin:10px auto;height:300px;overflow:scroll;' id = 'apple'>
+					
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>The US pushes for access</h3>
+					<img src = '../images/i.png' style = 'width:400px;margin:12px;float:left;'></br>
+					
+					<p class = 'content'>The Recent Terrorist attacks in the us has led the FBI
+					to tackle with the APPLE and many other tech giants in order to 
+					get pass their encrypted phones and gain acces to the suspects 
+					smartphone. This not only violates the suspects personeel records but
+					APPLE believes it could be used to gain access to all other APPLE smartphones
+					as well.A U.S. magistrate declared that the world’s biggest technology company must build a 
+					tool for the FBI to access an iPhone owned by one of the San Bernardino shooters.
+					The legal dispute between Apple and the FBI continues: the government has filed a response to Apple's refusal to cooperate with a federal magistrate's order instructing it to assist the FBI in circumventing the security features on an iPhone used by one of the San Bernardino shooters.
+					In their legal filings, Apple and the government face off on a number of issues. Apple says the government is using the court system to assert broad authority that hasn't been granted by Congress; the government says Apple is overstating the wide-reaching security concerns and creating "warrantproof" devices.
+					Below, in the words of their own filings, are a few of the issues where the two parties most fiercely disagree(Camila Domonoske,Alina Selyukh,2016)
+					Apple says its connection to the case doesn't justify it being "drafted into government service": "Apple is a private company that does not own or possess the phone at
+					issue, has no connection to the data that may or may not exist on the phone, and is not related in any way to the events(Camila Domonoske,Alina Selyukh,2016).
+					giving rise to the investigation."</p>
+
+					</br></br>
+					
+					</div>
+					
+					
+					
+					</section>
+
+				</main>
+				<!--closing main container-->
+				<!--openiing a container tag ,<footer> tag, for footer section-->
+				<!--closin footer tag-->
+			<!--closing div tag-->
+			<div id = 'footer' style = 'font-face:monospace;'> &copy Copyright Nishan Corps 2016. Kathmandu, Nepal </div>
+		</div>
+	</body>
+	<!--closing body tag-->
+</html><!--closing html tag-->

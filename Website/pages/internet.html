@@ -1,0 +1,149 @@
+<!doctype html><!--Declaring html5 type of code-->
+<html><!--starting html tag-->
+	<head><!--starting head tag-->
+		<title>Internet, NewTechNews</title><!--starting, adding content inside the title tag, closing the title tag-->
+		<meta type = 'author' content = 'Nishan Maharjan'
+				charset = 'UTF-8'><!--specifying that the character encoding of my content is UTF-8--><!--specing the author of the page-->
+		<!--startimng style tag to use css tag,,, inside different properties are used with specific values-->
+		<link rel = 'stylesheet' type = 'text/css' href = '../css/style.css'>
+		<link rel = 'icon' href = '../images/logo.png'><!--the icon will appear in the tab-->
+		<style>
+		.jello{
+				text-decoration:underline;
+				color:white;
+			}
+			
+			.sub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				height:400px;
+				overflow:hidden;
+				transition:height 2s;	
+			}
+			
+			.sub:hover{
+					box-shadow:0 0 5px #000000;
+					height:510px;
+			}
+			
+			.link{
+				text-decoration:none;
+				color:black;
+				margin-left:120px;
+				background-color:#BBBBBB;
+				padding:5px;
+				border-radius:3px;
+			}
+			
+			.link:hover{
+				box-shadow:0 0 12px #666666;
+			}
+			
+			p::first-letter{
+					font-size:30px;
+			}
+			
+		</style>
+		<script src = '../javascript/script.js'>
+				
+		</script>
+		<!--closing style tag-->
+	</head>
+	<!--closing head tag-->
+	<!--starting body tag-->
+	<body>
+		<!--starting a continer, <div> tag and setting specific properties with specific values, here the div tag will be the wrapper-->
+		<a class = 'topper' href = '#top'>TOP</a>
+		
+		<div style = 'width:1100px;
+					margin:auto;
+					background-color:transparent;
+					'>
+			<!--starting header tag, a container for header section-->
+			
+			<!--starting header tag, a container for header section-->
+			<div style = 'width:1100px;margin:0px auto;height:200px;'>
+				<img id = 'logo' src = '../images/logo.png'>
+				<img src = '../images/logo3.png' id = 'ft' usemap = '#social'>
+				<map name = 'social'>
+				<area shape = 'rect' coords ='3,16,61,76' href = 'https://twitter.com/?lang=en' target = '_blank'>
+				<area shape = 'rect' coords = '71,0,122,90' href = 'https://www.facebook.com/' target = '_blank' >
+				</map>
+				<input type = 'text' placeholder = 'Research' id = 'search'/>
+				<input type = 'submit' onclick = 'search()'value = 'search' /><!--creating a submit button whihc calls search() function when onclock event is triggered-->
+				
+				<!--using css properties and valiues to style the header-->
+			<!--closing header tag-->
+				
+			</div><p style = 'visibility:hidden;' id = 'top'></p>
+			<!--starting a container, <nav> tag for seperating navigation bar section-->
+			<nav>	
+			<!--starting <ul> tag for kepping links in lists and styling <ul> using css-->
+				<ul>
+				</br><!--breaking a line for decoration-->
+					<li><a href = '../index.html'>Home</a></li>
+					</li><li><a href = 'General.html'>General</a></li>
+					<li><a href = ' internet.html' style = 'background-color:#111;'>internet</a></li>
+					<li><a href = 'Top10.html'> Top 10</a></li>
+					<li><a href = 'Aboutus.html'>AboutUs</a>
+				</ul><!--closing list-->
+			</nav><!--closing <nav> container-->
+				<!--starting a container for main part, <main> tag-->	
+				<main style = ' margin-top:5px; background-color:#ffffff;'>
+					<section style = 'background-color:color;padding:12px;'>
+					<div class = 'sub'  style = 'width:960px;margin:50px;'>
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>South Korea has the highest internet speed</h3>
+					<img src = '../images/speed.png' style = 'width:400px;margin:12px;float:left;margin-right:10px;float:left;'></br>
+					<p class = 'content'>Where should you travel if you want the best Internet connection in the world? 
+					A new report says you should book a ticket straight to South Korea.
+					The East Asian nation topped a ranking of countries by their communications infrastructure released Monday
+					The ranking, which comes by way of the International Telecommunication Union (ITU), tracks a variety of metrics to come up with a benchmark for
+					measuring telecom developments across countries.
+					South Korea, which also led the ITU’s list back in 2010, is considered by many to be home to the fastest Internet 
+					connections in the world.Coming in second and third place are Denmark and Iceland, respectively. The United States, meanwhile, 
+					is sitting in fifteenth place, a one-place improvement from five years ago.(Time,2015)</br>
+					But how does this Indiana-sized country between Japan and China, two modern tech giants, manage to sustain its undefeated speed record? And why doesn’t the rest of the world have anything like it? I went looking for answers, and came back with five:</br>
+					<ol type = '1'>	
+					<li>Government planning</li></br>
+					<li>Healthy competition</li></br>
+					<li>Urban population density</li></br>
+					<li>Private-sector growth</li></br>
+					<li>Korean culture</li></br>
+					These are less entertaining than my initial explanation, which was that the South Korean internet is actually magic. 
+						However, taken together they make a great deal of sense. None of them is individually responsible for the blazing-fast speed of Korean data,
+								but combining them reveals a country in the right place, at the right time, with the right mindset. Perhaps the thing that sets Korea apart the most,
+				though, is how hard and long they worked to build an excellent system—which may be why moving there is probably the only way you can hope to get Korean-level
+							internet speeds in the near future(IDG Connect,2015).</p></br>
+					</div>
+					
+					<div class = 'sub'  style = 'width:960px;margin:50px;'>
+					<h3 align = 'center'style = 'color:#0000AA;' class = 'head'>Iranians Charged with hacking assaults on US</h3>
+					<img src = '../images/hack.png' style = 'width:400px;margin:12px;float:left;margin-right:10px;'></br>
+					<p class = 'content'>The U.S. Justice Department unsealed charges against seven alleged Iranian hackers Thursday, saying they attacked the U.S. 
+					financial system and servers for a dam in New York in the first public indictment against hackers tied to the Iranian government
+					U.S. officials have long accused Iran of sponsoring hackers, but Thursday’s charges are the most explicit accusation to date.
+					The indictment didn’t specifically allege the Iranian government directed the attacks, but said that one of the hackers received credit 
+					toward completion of his mandatory military service for the attacks and that another had trained Iranian intelligence officials, among 
+					other things.The unsealing of the charges comes after months of consultations among the Justice Department,
+					the State Department and a handful of intelligence agencies, said a person familiar with the matter. Over the last two years U.S
+					. officials say they have changed their approach and begun to treat nation-state affiliated hacking attacks like terrorism threats.“In 
+					unsealing this indictment, the Department of Justice is sending a powerful message: that we will not allow any individual, group, or 
+					nation to sabotage American financial institutions or undermine the integrity of fair competition in the operation of the free market,” 
+					Attorney General Loretta Lynch said at a news conference in Washington, D.C.Some officials privately expressed concerns that unsealing 
+					charges against individuals the U.S. has no hopes of arresting would only serve to agitate countries with which the U.S. has fraught relations, including China and Iran, the person familiar with the matter said.
+					“The world is small and our memory is long,” Federal Bureau of Investigation Director James Comey said during the Thursday news conference.
+					“We want them looking over their shoulders.(THE WALL STREET JOURNAL,2016)”</p>
+					</div>
+			
+					</section>
+					
+				</main>
+				<!--closing main container-->
+				<!--openiing a container tag ,<footer> tag, for footer section-->
+				<!--closin footer tag-->
+			<!--closing div tag-->
+			<div id = 'footer' style = 'font-face:monospace;'> &copy Copyright Nishan Corps 2016. Kathmandu, Nepal </div>
+		</div>
+	</body>
+	<!--closing body tag-->
+</html><!--closing html tag-->

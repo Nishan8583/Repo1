@@ -1,0 +1,169 @@
+<!doctype html><!--Declaring html5 type of code-->
+<html><!--starting html tag-->
+	<head><!--starting head tag-->
+		<title>Top10, NewTechNews</title><!--starting, adding content inside the title tag, closing the title tag-->
+		<meta type = 'author' content = 'Nishan Maharjan'
+				charset = 'UTF-8'><!--specifying that the character encoding of my content is UTF-8--><!--specing the author of the page-->
+		<!--startimng style tag to use css tag,,, inside different properties are used with specific values-->
+		<link rel='stylesheet' type='text/css' href='../css/style.css'>
+		<link rel = 'icon' href = '../images/logo.png'><!--the icon will appear in the tab-->
+		<style>
+			.jello{
+				text-decoration:underline;
+				color:white;
+			}
+			.sub{
+				background-color:#DDDDDD;
+				box-shadow:0 0 5px #666666;
+				
+			}
+			.sub:hover{
+					box-shadow:0 0 5px #000000;
+					
+					
+					
+			
+			}
+			.link{
+				text-decoration:none;
+				color:black;
+				margin-left:120px;
+				background-color:#BBBBBB;
+				padding:5px;
+				border-radius:3px;
+			}
+			.link:hover{
+				box-shadow:0 0 12px #666666;
+			
+			}
+			td,th{
+				height:150px;
+				width:150px;
+				padding:12px 16px;
+			}
+			.description{
+				width:350px;
+			}
+			.img:hover .info{
+				visibility:visible;
+			}
+			p{
+				padding:30px;
+			}
+			#leftholder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				left:0px;
+				top:0px;
+				
+			
+			}
+			#rightholder{
+				height:450px;
+				width:100px;
+				position:absolute;
+				right:0px;
+				top:0px;
+			
+			}
+			#left{
+				height:50px;
+				width:50px;
+				position:absolute;
+				top:60%;
+				left:30px;
+				
+			}
+			#right{
+				height:50px;
+				width:50px;
+				position:absolute;
+				top:60%;
+				right:30px;
+			
+			}
+			#right:hover,#left:hover
+			{
+				box-shadow:0 0 20px #000000;
+			}
+			#container{
+				margin:20px auto;
+				position:relative;
+			}
+			#iframe{
+			margin-left:95px;
+			}
+			
+		</style>
+		<script src = '../javascript/script.js'>
+				
+		</script>
+		<!--closing style tag-->
+	</head>
+	<!--closing head tag-->
+	<!--starting body tag-->
+	<body>
+		<!--starting a continer, <div> tag and setting specific properties with specific values, here the div tag will be the wrapper-->
+		<a class = 'topper' href = '#top'>TOP</a>
+		
+		
+		
+		<div style='width:1100px;
+					margin:auto;
+					background-color:transparent;
+					'>
+			<!--starting header tag, a container for header section-->
+		<div style = 'width:1100px;margin:0px auto;height:200px;'>
+				<img id = 'logo' src = '../images/logo.png'>
+				<img src = '../images/logo3.png' id = 'ft' usemap = '#social'>
+				<map name = 'social'>
+				<area shape = 'rect' coords ='3,16,61,76' href = 'https://twitter.com/?lang=en' target = '_blank'>
+				<area shape = 'rect' coords = '71,0,122,90' href = 'https://www.facebook.com/' target = '_blank' >
+				</map>
+				<input type = 'text' placeholder = 'Research' id = 'search'/>
+				<input type = 'submit' onclick = 'search()' value = 'search' /><!--creating a submit button whihc calls search() function when onclock event is triggered-->
+				
+				<!--using css properties and valiues to style the header-->
+			<!--closing header tag-->
+				
+			</div>
+			<p style = 'visibility:hidden;padding:0px;' id = 'top'></p>
+			<!--starting a container, <nav> tag for seperating navigation bar section-->
+			<nav>				<!--starting <ul> tag for kepping links in lists and styling <ul> using css-->
+				<ul>
+				</br><!--breaking a line for decoration-->
+				
+					<li><a href='../index.html'>Home</a></li>
+					<li><a href='General.html'>General</a></li>
+					<li><a href='internet.html'>internet</a></li>
+					<li><a href='Top10.html' style = 'background-color:#111;'> Top 10</a></li>
+					<li><a href='Aboutus.html'>AboutUs</a></li>
+					
+				</ul><!--closing list-->
+			</nav><!--closing <nav> container-->
+				<!--starting a container for main part, <main> tag-->	
+				
+				<main style = ' margin-top:5px; background-color:#ffffff;'>
+				
+					<div style = 'background-color:color;padding:12px;'>
+					
+					<div class = 'sub' style = ' margin:20px;' id = 'Last'>
+						
+						<div id ='container'>
+						<h3 class = 'head' align = 'center'style = 'color:#0000AA;font-family:game1;padding-top:10px;font-size:30px;'>Click for video review</h3>
+						<iframe id = 'iframe' width="854" height="480" src="https://www.youtube.com/embed/1NtFTpa6aCg" frameborder="0" allowfullscreen></iframe>
+						<div id = 'leftholder'><img onclick = 'newSite(-1)' src= '../images/left.png' id = 'left' style = 'opacity:0.7;'></div>
+						<div id = 'rightholder'><img onclick = 'newSite(1)' src = '../images/right.png' id = 'right' style = 'opacity:0.7;'></div>
+						</div>
+						 
+					</div>
+					
+				</main><!--closing main container-->
+				<!--openiing a container tag ,<footer> tag, for footer section-->
+				<div id = 'footer' style = 'font-face:monospace;'> &copy Copyright Nishan Corps 2016. Kathmandu, Nepal </div><!--closin footer tag-->
+			<!--closing div tag-->
+		</div>
+	</body>
+	<!--closing body tag-->
+</html><!--closing html tag-->

@@ -1,0 +1,2 @@
+THe google map API key used is:
+AIzaSyAK1Pp5eqFbiQiBSCUJFAHUlfmNRxDfPI0
