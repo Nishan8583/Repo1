@@ -1,5 +1,4 @@
-**Quick Disclaimer**
-
+# Quick Disclaimer
 
 The file sdaemon.py script was downloaed form elsewhere and does not belong to me. Available at https://github.com/serverdensity/python-daemon/blob/master/daemon.py
 
