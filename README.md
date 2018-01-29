@@ -1,3 +1,3 @@
 # security_scripts
 
-Scripts written here are mostly learned form the book Violent Python
+Forencics and Attack scripts written here are mostly learned and modified form the book Violent Python
